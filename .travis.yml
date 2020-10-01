@@ -1,14 +1,14 @@
 language: node_js
 cache:
-  directories: 
+  directories:
     - ~/.npm
-node_js: 
+node_js:
   - '12'
 git:
   depth: 3
 script:
   - yarn build
-deploy:
+deploy: 
   provider: pages
   edge: true
   skip-cleanup: true
